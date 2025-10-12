@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="top-section">
+    <div>
+    <h1>Diseñamos y construimos el hogar de tus sueños. <br>
+Te ayudamos a concretar tus anhelos y necesidades.</h1>
+</div>
+</section>
+<section id="second-section">
+    <h2>MMO Constructora</h2>
+    <h1>Creamos soluciones arquitectónicas con raíces en el diálogo y la reflexión entre arquitecto y cliente.</h1>
+    <div id="double-section">
+        <div id="double-section-text">
+        <h3>Elegir el estudio de arquitectura adecuado puede ser una decisión abrumadora.</h3>
+        <p>¿Cómo estar seguro de que tu dinero será bien invertido? ¿Cómo saber si realmente entenderán y plasmarán tus intenciones en el proyecto?
+
+En Estudio Stoa estamos comprometidos a cambiar esa percepción. Nuestra propuesta se basa en un diseño racional, minimalista y atractivo, pero lo más importante, en crear una relación de confianza y transparencia entre arquitecto y cliente.</p>
+        <div class="agenda-llamada">
+            <a href="" style="color: white; text-decoration: none;">AGENDÁ UNA LLAMADA</a>
+        </div>
+    </div id="double-section-img" >
+            <img src="{{ url_for('static', filename='house-section.jpg') }}" alt="">
+    </div>
+    <div id="big-img-section">
+        <img src="{{ url_for('static', filename='example_house2.jpg') }}" alt="">
+    </div>
+</section>
+
+<section id="services-section">
+    <p>SERVICIOS DE ARQUITECTURA E INTERIORISMO</p>
+    
+    <h1>Cada proyecto es fruto de un minucioso estudio de tus gustos, preferencias y necesidades.</h1>
+    
+    <div class="services-grid">
+        <!-- Imagen con texto -->
+        <div class="services-image">
+            <div class="services-image-text">
+                <p>Diseñamos y construimos</p>
+                <p>el hogar de tus sueños</p>
+            </div>
+            <!-- Aquí puedes agregar tu imagen de equipo -->
+            <!-- <img src="{{ url_for('static', filename='team-photo.jpg') }}" alt="Equipo"> -->
+        </div>
+        
+        <!-- Lista de servicios con details -->
+        <div class="services-list">
+            <details>
+                <summary>
+                    Proyectos de arquitectura a medida
+                    <span>+</span>
+                </summary>
+                <div>
+                    <p>Diseñamos espacios únicos adaptados a tus necesidades específicas, desde viviendas unifamiliares hasta proyectos comerciales.</p>
+                </div>
+            </details>
+            
+            <details>
+                <summary>
+                    Obra/construcción
+                    <span>+</span>
+                </summary>
+                <div>
+                    <p>Gestionamos y ejecutamos la construcción de tu proyecto con los más altos estándares de calidad y seguimiento personalizado.</p>
+                </div>
+            </details>
+            
+            <details>
+                <summary>
+                    Interiorismo
+                    <span>+</span>
+                </summary>
+                <div>
+                    <p>Creamos ambientes que reflejan tu personalidad y estilo de vida, cuidando cada detalle del diseño interior.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    Remodelaciones integrales
+                    <span>+</span>
+                </summary>
+                <div>
+                    <p>Transformamos y renovamos espacios existentes, adaptándolos a nuevas funcionalidades y estilos contemporáneos.</p>
+                </div>
+            </details>
+
+            <!-- Botón de llamada a la acción -->
+            <div class="services-cta">
+                <a href="">AGENDÁ UNA LLAMADA</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de proceso de trabajo -->
+<section id="proceso-section">
+    <div>
+        <p>PROCESO DE TRABAJO</p>
+        
+        <h1>Todos los proyectos que dibujamos y construimos son a medida.</h1>
+        
+        <div class="proceso-grid">
+            <!-- Columna de texto -->
+            <div class="proceso-text">
+                <p>En primera instancia trabajamos con reuniones presenciales o virtuales para conocer a nuestros clientes y nos cuenten sobre sus intereses, necesidades y ritmo de vida. Estos elementos resultan esenciales para que podamos elaborar una arquitectura que se amolde exactamente a cada familia.</p>
+                
+                <p class="proceso-highlight">Nos gusta llevar el proceso creativo en conjunto con nuestros clientes.</p>
+                
+                <p>En cada etapa organizamos reuniones para recolectar devoluciones de entrega, donde se visualizan los avances mediante planos, renders con propuestas morfológicas y de materialidades, como también análisis de costos y factibilidad.</p>
+                
+                <p>Durante la obra se respetará el cronograma pactado con antelación con el cliente, invitándolos a realizar una recorrida en conjunto semanal para que se detallen y expliquen cada unos de los avances realizados, con el fin de compartir y disfrutar del progreso de manera conjunto.</p>
+                
+                <a href="">AGENDÁ UNA LLAMADA</a>
+            </div>
+            
+            <!-- Columna de imágenes -->
+            <div class="proceso-images">
+                <img src="{{ url_for('static', filename='interior-moderno.jpg') }}" alt="Interior moderno">
+                <img src="{{ url_for('static', filename='cocina-moderna.webp') }}" alt="Cocina moderna">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Sobre Nosotros -->
+<section id="sobre-nosotros">
+    <div class="sobre-container">
+        <p class="sobre-subtitle">SOBRE NOSOTROS</p>
+        
+        <h1 class="sobre-title">Proyectos únicos, comunicación transparente, vínculos duraderos.</h1>
+        
+        <div class="sobre-description">
+            <p>En tiempos donde los problemas abundaban y las soluciones parecían ser escasas, la filosofía fue una inyección de energía para empezar a crear soluciones para nuestro entorno en la materia que nos especializamos - la arquitectura - <strong>para pasar del predominio de la preocupación a la ocupación.</strong></p>
+            
+            <p>Estos mismos valores que fuimos y seguimos adquiriendo de la filosofía fueron los que nos empujaron en 2019 a fundar Estudio Stoa, con el objetivo de prestar nuestro servicio de arquitectura a la comunidad basado en el diálogo, la reflexión, confianza y el vínculo.</p>
+        </div>
+        
+        <!-- Carrusel de equipo -->
+        <div class="team-carousel">
+            <button class="carousel-btn prev-btn" onclick="moveCarousel(-1)">&#10094;</button>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="team-member">
+                        <img src="{{ url_for('static', filename='team-member1.jpg') }}" alt="Andrés">
+                        <div class="member-info">
+                            <h3>Andrés</h3>
+                            <p>Arquitecto</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="{{ url_for('static', filename='team-member2.jpg') }}" alt="Dafne Bianmele">
+                        <div class="member-info">
+                            <h3>Dafne Bianmele</h3>
+                            <p>Lawyer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="{{ url_for('static', filename='team-member3.jpg') }}" alt="Karina Martínez">
+                        <div class="member-info">
+                            <h3>Karina Martínez</h3>
+                            <p>Administrative Manager</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <img src="{{ url_for('static', filename='team-member4.jpg') }}" alt="Marcelo Mochi">
+                        <div class="member-info">
+                            <h3>Marcelo Mochi</h3>
+                            <p>Construction Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn next-btn" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
