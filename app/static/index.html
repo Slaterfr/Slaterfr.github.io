@@ -1,7 +1,24 @@
-{% extends "base.html" %}
-
-{% block content %}
-<section id="top-section">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="section-info">
+            <img src="MMO_logo2.png" alt="MMO_logo2">
+            <a href="#services-section">Servicios</a>
+            <a href="#proceso-section">Proceso de trabajo</a>
+            <a href="">Sobre nosotros</a>
+            <div id="agenda-cita">
+                <a href="">AGENDÁ UNA CITA</a>
+            </div>
+        </div>
+    </header>
+    <section id="top-section">
     <div>
     <h1>Diseñamos y construimos el hogar de tus sueños. <br>
 Te ayudamos a concretar tus anhelos y necesidades.</h1>
@@ -20,10 +37,10 @@ En Estudio Stoa estamos comprometidos a cambiar esa percepción. Nuestra propues
             <a href="" style="color: white; text-decoration: none;">AGENDÁ UNA LLAMADA</a>
         </div>
     </div id="double-section-img" >
-            <img src="{{ url_for('static', filename='house-section.jpg') }}" alt="">
+            <img src="house-section.jpg" alt="">
     </div>
     <div id="big-img-section">
-        <img src="{{ url_for('static', filename='example_house2.jpg') }}" alt="">
+        <img src="example_house2.jpg" alt="">
     </div>
 </section>
 
@@ -116,8 +133,8 @@ En Estudio Stoa estamos comprometidos a cambiar esa percepción. Nuestra propues
             
             <!-- Columna de imágenes -->
             <div class="proceso-images">
-                <img src="{{ url_for('static', filename='interior-moderno.jpg') }}" alt="Interior moderno">
-                <img src="{{ url_for('static', filename='cocina-moderna.webp') }}" alt="Cocina moderna">
+                <img src="interior-moderno.jpg" alt="Interior moderno">
+                <img src="cocina-moderna.jpg" alt="Cocina moderna">
             </div>
         </div>
     </div>
@@ -180,4 +197,21 @@ En Estudio Stoa estamos comprometidos a cambiar esa percepción. Nuestra propues
         </div>
     </div>
 </section>
-{% endblock %}
+    <footer style="font-size: small; text-align: center; font-family: Arial, sans-serif; padding: 10px;">
+    <details>
+        <summary>📍Contacto del Museo</summary>
+        <p>📧 Correo: contacto@puerta21.org</p>
+        <p>📞 Teléfono: +123-456-7890</p>
+        <p>🏛 Dirección: Av. Cnel Manuel Dorrego 4045, Palermo, Buenos Aires, AR</p>
+        <p>🕒 Horario: Lunes a Sábado, 10:00 AM - 6:00 PM</p>
+      </details>
+        <p style="margin-top: 30px;">
+        Proyecto colaborativo | Museo Puerta21<br>
+        Sitio web desarrollado por <a href="https://www.instagram.com/jslavl/profilecard/?igsh=bzA3ZmN6YWszcHEz" target="_blank" style="color: red;">Jefferson Villalobos</a> 🇨🇷 2025 <br>
+        <img src="Images/25231.png" alt="GithubLogo" style="max-width: 15px; height: auto;">
+        <a href="https://github.com/Slaterfr" target="_blank" style="color: goldenrod; text-decoration: none;">GitHub</a> |
+        <a href="mailto:slavillalobos1@mail.com" style="color: goldenrod; text-decoration: none;">Contacto</a>
+        <img src="Images/gmail_logo.webp" alt="gmail_logo" style="max-width: 15px; height: auto;">
+    </p>
+</body>
+</html>
